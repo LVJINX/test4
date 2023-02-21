@@ -1,0 +1,23 @@
+openapi: 3.0.1
+info:
+  title: <title>
+  description: <description>
+  x-cortex-tag: Dummy-Acquia/test4
+  x-cortex-git:
+    github:
+      repository: Dummy-Acquia/test4
+  x-cortex-owners:
+    - type: GROUP
+      name: Dummy-Acquia/<team>
+      provider: GITHUB
+      description: <Short description about the owner team.>
+    - type: SLACK
+      channel: <slack-channel-name>
+      notificationsEnabled: true
+      description: <Short description about the slack channel.>
+  x-cortex-groups:
+    - <one of drupal-cloud, marketing-cloud or content-cloud>
+    - <Add other groups as desired (each group as a new list element herewith), or remove this line. More details present in the onboarding doc.>
+  x-cortex-dependency:
+    - tag: <full x-cortex-tag of another service or resources on which this service is dependent.>
+    - tag: <Add as many other service or resources this service depends upon, each as a new list element herewith, or remove this line if otherwise.>
